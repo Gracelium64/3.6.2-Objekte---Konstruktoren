@@ -21,11 +21,10 @@ void main() {
   bunny();
 
   Autor a1 = Autor('Name Lastname', 1987);
-  Book b1 = Book('Book Titel', '$a1', 348);
+  String a2 = a1.name;
+  Book b1 = Book('Book Titel', a2, 348);
 
   print(b1.titel);
   print(b1.numberOfPages);
   print(b1.autor);
-  print(a1.name);
-
 }
